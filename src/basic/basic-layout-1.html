@@ -6,7 +6,36 @@
     <title>Basic Layout 1</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-areas: 
+        "h h h h h h"
+        "n m m m m m"
+        "n m m m m m"
+        "n m m m m m"
+        "n m m m m m"
+        "f f f f f f";
+      }
+
+      header {
+        grid-area: h;
+        background: purple;
+      }
+
+      nav {
+        grid-area: n;
+        background: green;
+      }
+
+      main {
+        grid-area: m;
+        background: blue;
+      }
+
+      footer {
+        grid-area: f;
+        background: pink;
+      }
     </style>
   </head>
   <body id="basic-layout-1">
