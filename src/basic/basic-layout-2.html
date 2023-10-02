@@ -6,7 +6,38 @@
     <title>Basic Layout 2</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-areas: 
+        "header"
+        "nav"
+        "main"
+        "main"
+        "main"
+        "main"
+        "main"
+        "footer";
+      }
+
+      header {
+        grid-area: header;
+        background: purple;
+      }
+
+      nav {
+        grid-area: nav;
+        background: green;
+      }
+
+      main {
+        grid-area: main;
+        background: blue;
+      }
+
+      footer {
+        grid-area: footer;
+        background: pink;
+      }
     </style>
   </head>
   <body id="basic-layout-2">
