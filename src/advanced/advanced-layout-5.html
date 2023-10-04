@@ -6,7 +6,39 @@
     <title>Advanced Layout 5</title>
     <link rel="stylesheet" href="../style.css" />
     <style>
-      /* Doe hier jouw ding! */
+      body {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        ". . . . . h h h"
+        ". . . n n n . ."
+        "m m m m . . . ."
+        "m m m m . . . ."
+        ". . . f f f f f";
+      }
+
+      header {
+        grid-area: h;
+        background: purple;
+        z-index: 2;
+      }
+
+      nav {
+        grid-area: n;
+        background: green;
+        z-index: 1;
+      }
+
+      main {
+        grid-area: m;
+        background: blue;
+      }
+
+      footer {
+        grid-area: f;
+        background: pink;
+        z-index: 1;
+      }
     </style>
   </head>
   <body id="advanced-layout-5">
