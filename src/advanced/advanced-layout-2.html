@@ -8,33 +8,38 @@
     <style>
       body {
         display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr 1fr;
+        grid-gap: 0.5rem;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 2.5fr 1fr 2.5fr 1fr 1fr;
         grid-template-areas: 
-        "header nav"
-        "main main"
-        "footer footer";
+        ". . . ."
+        "h h h h"
+        ". . . ."
+        "m m m m"
+        "f f f f";
       }
 
       header {
-        grid-area: header;
+        grid-area: h;
         background: purple;
-        transform: rotate(45deg);
+        transform: rotate(30deg);
+        height: 5em;
       }
 
       nav {
-        grid-area: nav;
+        grid-area: h;
         background: green;
-        transform: rotate(-45deg);
+        transform: rotate(-30deg);
+        height: 5em;
       }
 
       main {
-        grid-area: main;
+        grid-area: m;
         background: blue;
       }
 
       footer {
-        grid-area: footer;
+        grid-area: f;
         background: pink;
       }
     </style>
